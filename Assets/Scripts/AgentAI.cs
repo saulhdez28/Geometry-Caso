@@ -14,7 +14,7 @@ public class AgentAI : MonoBehaviour
     FireAttackController _fireController;
     NavMeshAgent _navAgent;
 
-    private void Start()
+    private void Awake()
     {
         _navAgent = GetComponent<NavMeshAgent>();
         //_fireController = GetComponent<FireAttackController>();
