@@ -195,14 +195,14 @@ namespace StarterAssets
 
         private void SetAttackMode()
         {
-            _currentAttackMode = (AttackMode)UnityEngine.Random.Range(1, 6);
+            //_currentAttackMode = (AttackMode)UnityEngine.Random.Range(1, 6);
 
-            if (_currentAttackMode == AttackMode.KO)
-            {
-                _currentAttackMode = AttackMode.Jab;
-            }
+            //if (_currentAttackMode == AttackMode.KO)
+            //{
+            //    _currentAttackMode = AttackMode.Jab;
+            //}
 
-            _animator.SetInteger("Mode", (int)_currentAttackMode);
+            _animator.SetInteger("Mode", 1);
         }
 
         private bool CanAttack()
